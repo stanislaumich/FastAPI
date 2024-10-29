@@ -21,6 +21,9 @@ def get_user(id: int, db):
     user = db.query(User).filter(User.id == id).first()
     return user
 
+def list_user(db):
+    user = db.query(User).all()
+    return user
 
 def update_user(data: user.User, db: Session, id: int):
     user = db.query(User).filter(User.id == id).first()
