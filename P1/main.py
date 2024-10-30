@@ -9,7 +9,7 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 origins = ["*"]
-#app.mount("/static", StaticFiles(directory="static", html=True))
+app.mount("/static", StaticFiles(directory="static", html=True))
 app.mount("/", StaticFiles(directory="static", html=True))
 app.add_middleware(
     CORSMiddleware,
