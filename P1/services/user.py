@@ -5,12 +5,15 @@ from dto import user
 
 def create_user(data: user.User, db: Session):
     user = User(name=data.name, username=data.username, password = data.password, dolg=data.dolg)
-
+    print(1)
     try:
+        print(2)
         db.add(user)
+        print(3)
         db.commit()
+        print(4)
         db.refresh(user)
-
+        print(5)
     except Exception as e:
         print(e)
 
