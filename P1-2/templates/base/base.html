@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#712cf9">
+    <title>
+        {% block title %}
+            Не сработал блок title
+        {% endblock title %}
+    </title>
+</head>
+<body>
+<div class="container">
+    <!-- header wrapper   -->
+    {% include "/base/header.html" %}
+    <!-- /header -->
+    <!-- End Navigation -->
+    <div class="container">
+        <div class="container">
+            <div class="container">
+                <div class="container">
+                    {% block header2 %}
+                        Не сработал блок хидер2
+                    {% endblock header2 %}
+                    <br>
+
+                </div>
+                {% block content %}
+                    Не сработал блок контента
+                {% endblock content %}
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <!-- Begin Footer -->
+        <div class="footer">
+            <!-- footer -->
+            {% include "/base/footer.html" %}
+            <!-- /footer -->
+        </div>
+        <!-- End Footer -->
+    </div>
+</div>
+</body>
+</html>

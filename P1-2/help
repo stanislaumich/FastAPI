@@ -1,0 +1,14 @@
+pip freeze > requirements.txt
+
+
+<script  language="JavaScript">
+const vm = new Vue({
+el: '#app',
+data: {
+results: {"BTC":{"USD":3759.91,"EUR":3166.21},
+"ETH":{"USD":281.7,"EUR":236.25},
+"NEW Currency":{"USD":5.60,"EUR":4.70}}
+}
+});
+</script>
+
