@@ -14,4 +14,4 @@ templates = Jinja2Templates(directory="templates")
 async def get(request: Request):
 
 
-    return templates.TemplateResponse("/base/index.html", {"request": request})
+    return templates.TemplateResponse("/base/login.html", {"request": request})
